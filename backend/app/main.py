@@ -3,7 +3,7 @@ from fastapi import FastAPI, UploadFile, Form
 import firebase_admin
 from firebase_admin import credentials, firestore
 import os
-from model.detect import dummy_detect
+from model.predict import dummy_detect
 
 # Initialize Firebase
 cred = credentials.Certificate("../firebase.json")
