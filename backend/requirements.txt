@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+python-multipart
+firebase-admin
+torch
+torchvision
+opencv-python
+ffmpeg-python
