@@ -1,7 +1,7 @@
 import torch
 from torch import nn, optim
 from torch.utils.data import DataLoader
-from dataset import train_dataset
+from create_dataset import train_dataset
 from model import get_resnet18
 
 model = get_resnet18()
@@ -18,4 +18,4 @@ for epoch in range(5):
         optimizer.step()
     print(f"Epoch {epoch+1}, Loss={loss.item():.4f}")
 
-torch.save(model.state_dict(), "model/saved_models/resnet18.pth")
+torch.save(model.state_dict(), "saved_models/resnet18.pth")
